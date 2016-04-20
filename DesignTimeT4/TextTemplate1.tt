@@ -17,9 +17,31 @@ namespace DesignTimeT4
    foreach (XmlNode classNode in classNodes)
    {
 #>
-      public partial class <#=classNode.Attributes["name"].Value#>
+      // class begin
+      public partial class <#=classNode.Attributes["name"].Value#> : <#=classNode.Attributes["inherits"].Value#>
       {
-      }
+         #region fields
+<# 
+      // write fields
+       XmlNodeList propertyNodes = classNode.SelectNodes("property");
+      foreach (XmlNode propNode in propertyNodes)
+      {  
+#>
+         private <#=propNode.Attributes["type"].Value #> _<#=propNode.Attributes["name"].Value#> = <#=propNode.Attributes["default"].Value#>;
+<#    }  #>
+         #endregion
+
+         #region properties
+
+         #endregion
+
+         #region constructors
+         #endregion
+
+
+
+
+      } // class end
 <#      
    }
       
