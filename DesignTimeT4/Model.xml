@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<model>
+   <modelclass name="QAddColumnToTableCR" inherits="QChangeRequest">
+      <property name="columnName" type="string" default="" notifypropertychanged="true"/>
+   </modelclass>
+   
+</model>
