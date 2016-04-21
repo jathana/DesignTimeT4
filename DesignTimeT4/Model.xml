@@ -2,6 +2,12 @@
 <model>
    <modelclass name="QAddColumnToTableCR" inherits="object">
       <property name="ColumnName" type="string" default="&quot;&quot;" notifypropertychanged="true"/>
+      <property name="ColumnName2" type="string" default="&quot;&quot;" notifypropertychanged="true"/>
+   </modelclass>
+
+   <modelclass name="QAddColumnToTableCR2" inherits="object">
+      <property name="ColumnName" type="string" default="&quot;&quot;" notifypropertychanged="true"/>
+      <property name="ColumnName2" type="string" default="&quot;&quot;" notifypropertychanged="true"/>
    </modelclass>
    
 </model>
