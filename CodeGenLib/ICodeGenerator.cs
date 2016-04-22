@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CodeGenLib
 {
-   public interface ICodeGenerator
+   public interface ICodeGenerator<T>
    {
-      IGenerateResult Generate();
+      IGenerateResult<T> Generate();
    }
 }

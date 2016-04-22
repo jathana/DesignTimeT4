@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodeGenLib
 {
-    public class Class1
-    {
-    }
+   public class PropertyGenerateResult
+   {
+   }
 }
